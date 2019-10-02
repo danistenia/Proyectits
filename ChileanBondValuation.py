@@ -97,9 +97,8 @@ def valbond(paper,formatofechaemi,formatofechaval,tir):
     for k in miarreglo2:
         bombita.append(((1+tir)**(-k/365)))
    
-    print(miarreglo2)
+    
     print()
-    print(bombita)
     print()
     print("El precio sucio es: ",np.dot(miarreglo,bombita)*100)
     print("El precio limpio es",(np.dot(miarreglo,bombita)*100)-(((couponrate/36500)*(listadeltadias[0]-largointerpol[0])))*100)
