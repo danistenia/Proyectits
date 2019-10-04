@@ -5,8 +5,10 @@ from dateutil.relativedelta import relativedelta
 import numpy as np
 
 
-
-#Creamos listas para almacenar datos relevantes para presentación de resultados
+#Este es un valorizador de papeles/bonos de gobierno Chileno, el resultado es el precio limpio y sucio. 
+#Es una función que tiene 4 inputs: El papel expresado en formato de mercado, fecha de emisión, fecha de valorizacíon y la tir.#
+#Un ejemplo de su uso es... valbond('BTP0450120','03/10/2016','03/10/2019',0.026)
+#Hice un print de los cupones y la tabla de desarrollo de los cortes de cupon, pueden eliminarse también. 
   
 def valbond(paper,formatofechaemi,formatofechaval,tir):
     cortes_ini=[]
